@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AddressesComponent implements OnInit {
 
-  public addresses!: Address[] ;
+  public addresses!: Address[];
 
   constructor(private http: HttpClient) { }
 

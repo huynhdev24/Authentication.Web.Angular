@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   public login = (form: NgForm) => {
     const credentials = JSON.stringify(form.value);
 
-    this.http.post(environment.baseUrl + "authenticate/login",
+    this.http.post(environment.baseUrl + "auth/login",
       credentials
     ).subscribe({
       next: (response) => {

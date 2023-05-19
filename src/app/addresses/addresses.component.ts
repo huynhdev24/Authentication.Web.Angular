@@ -14,7 +14,7 @@ export class AddressesComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get(environment.baseUrl + "addresses", {
+    this.http.get(environment.baseUrl + "address", {
     }).subscribe({
       next: (response) => {
         this.addresses = response as Address[];

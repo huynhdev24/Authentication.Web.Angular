@@ -21,7 +21,7 @@ export class RegisterComponent implements OnInit {
   public register = (form: NgForm) => {
     const registerModel = JSON.stringify(form.value);
 
-    this.http.post(environment.baseUrl + "authenticate/register",
+    this.http.post(environment.baseUrl + "auth/register",
       registerModel
     ).subscribe({
       next: () => {
